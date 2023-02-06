@@ -1,0 +1,247 @@
+.masthead-mobiletrigger {
+	display: none;
+}
+
+
+
+.hero {
+	background: #fff url("../images/car-header.jpg") no-repeat;
+	background-size: auto 100px;
+	background-position: top center;
+	padding: 100px 0 0 0;
+}
+
+.hero h2 {
+	text-align: center;
+	color: #29276a;
+	font-size: 22px;
+    line-height: 1.25;
+	padding: 10px 20px 0;
+	margin: 0 0 20px 0;
+	
+}
+
+.form-button--primary {
+	background: #F88421;
+	color: #fff;
+	font-weight: bold;
+	padding: 14px 0;
+	font-size: 16px;
+	cursor: pointer;
+	width: auto;
+	margin: 0 10px;
+	min-width: 100px;
+}
+
+.form-button--primary:hover {
+	background: #fd9f17;
+}
+
+.three-icon-list h3 {
+	color: #fff;
+	font-weight: 600;
+}
+
+@media all and (min-width: 760px) {
+	.hero {
+		padding: 40px 0;
+		background: #f5f5f5 url("../images/desktop-header.jpg") no-repeat;
+		background-size: auto;
+		background-position: top right;
+
+	}
+	
+	.form-button--primary {
+		font-size: 20px;
+	}
+}
+
+.desktop-right-col {
+	padding-top: 0;
+}
+
+.formParts {
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	flex-wrap: nowrap;
+}
+
+
+.formPart {
+	flex: 0 0 100%;
+	padding-top: 30px;
+	padding-bottom: 0;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+    max-width: 100%;
+    transition: 200ms linear opacity;
+}
+
+@media screen and (max-width:760px) {
+
+    .formPart {
+        padding-bottom: 20px;
+    }
+
+}
+
+
+#finalStep {
+    text-align: center;
+    color: #90da3c;
+    padding: 0 2rem 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    margin: 0 auto 0;
+    align-items: center;
+}
+
+#finalStep h2, #finalStep p {
+    color: #444;
+}
+
+#finalStep .thankYouLink {
+	opacity: 0;
+	display: none;
+}
+
+#finalStep .thankYouLink a {
+    pointer-events: none;    
+    text-decoration: underline;
+    color: #4795dd;
+}
+
+#finalStep .thankYouLink a:hover {
+    text-decoration: none;
+    color: #2868a5;
+}
+
+#finalStep .thankYouCountdown {
+    width: 60px;
+    height: 60px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    position: relative;
+}
+
+#finalStep .thankYouCountdown span {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+@keyframes rotateCircle {
+    from {transform: scale(0.6) rotate(0);}
+    to {transform: scale(0.6) rotate(360deg);}
+}
+
+#finalStep .thankYouCountdown .redirecting-circle svg {
+    transform: scale(0.6);
+    animation-name: rotateCircle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#finalStep .thankYouCountdown svg {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#finalStep .thankYouCountdown svg .countdownCircle {
+    fill:none;
+    stroke:#90DA3C;
+    stroke-width:6;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+    stroke-dasharray: 170px;
+    stroke-dashoffset: 170px;
+    transition: 150ms stroke-dashoffset ease-in;
+    /*animation: circleCountdown 3s linear 1 forwards;*/
+}
+
+
+
+
+
+/* COMMON FORM CSS */
+
+#formProgress {
+    height: 10px;
+    width: 100%;
+    background: #dadada;
+    max-width: 490px;
+    width: calc(100% - 1rem);
+    margin: 1rem auto 0;
+}
+
+#formProgress .progressBar {
+    content: "";
+    display: block;
+    height: 100%;    
+    width: 0;
+    background: #90da3c;
+    transition: 250ms width ease-in-out;
+    position: relative;
+    z-index: 100;
+}
+
+#formProgress .progressBar .progressNumber {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: white;
+    padding: .25rem .5rem;
+    border-radius: 5px;
+    border: 2px solid #8fda3c;
+    width: 4em;
+    text-align: center;
+}
+
+
+
+.formPart .buttonGrid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.formPart .buttonGrid .buttonCar {
+    flex: 0 0 calc(50% - 1rem);
+    margin: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border: 2px solid #bddde8;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.formPart .buttonGrid .buttonCar:hover {
+    border: 2px solid #80b3c4;
+    background-color: #bddde8;
+}
+
+.formPart .buttonGrid .buttonCar img {
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 110px;
+    height: auto;
+}
