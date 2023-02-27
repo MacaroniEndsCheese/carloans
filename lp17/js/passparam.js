@@ -11,8 +11,8 @@
 
 $(document).ready(function(){
 
-    var url_track = "https://www.jerlnk.com/2BT5SMX/2M1NRZF/" + window.location.search;
-
+    var url_track = "https://trrk5.pointpointiklo.pro/63fd0a9ca2e65e0001f8cf56" + window.location.search;
+    
     $('a[data-track]').each(function(i){
         $(this).attr("href", url_track);
     });
